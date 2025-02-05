@@ -15,6 +15,7 @@ function WeatherCard() {
     const handleSearch = (e) => {
         e.preventDefault();
         fetchWeather(city);
+        setCity('');
     }
     
     return (
